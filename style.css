@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:  0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav{
+    height: 80px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) /2);
+}
+
+.logo{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    cursor: pointer;
+}
+
+.hero{
+    background: black;
+}
+
+.hero-container{
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr;
+    height: 95vm;
+    padding: 3rem calc((100vw - 1300px) /2);
+}
+
+.column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    padding: 0 2rem;
+}
+.logo{
+    color: #fff;
+}
+.column-left h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5;
+    line-height: 1.5;
+}
+
+
+button{
+    border-radius: 50px;
+    border: none;
+    height: 40px;
+    width: 90px;
+    cursor: pointer;
+}
+
+
+body .background-image {
+    background-image: url(backround.jpeg);
+    padding: 0rem 2rem;
+}
+
+.hero-image{
+    width: 100%;
+    border-radius: 0%;
+    height: 50%;
+}
+
+@media screen and (max-width: 768px){
+    .hero-container{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+/*--carlist.html*/
+
+.button-carlist{
+    border: none;
+    background-color: black;
+}
+.dropdown{
+    display: inline-block;
+    background-color: white;
+}
+.dropdown button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+    
+}
+
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0% 95%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    float: left;
+    border-radius: 10px;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.display:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.display a:hover{
+    background-color: hsl(0, 0%, 70%);
+}
+
+/* suv */
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.content-1{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rbga(0,0,0,0,25);
+    transition: .4s;
+    background: #f2f2f2;
+}
+.content-1:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+img{
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+}
+p{
+    text-align: center;
+    color: #b2bec3;
+    padding-top: 0 8px;
+}
+h6{
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+.buy-1{
+    background-color: #2183a2;
+}
+.buy-2{
+    background-color: #2183a2;
+}
+.buy-3{
+    background-color: #2183a2;
+}
+.buy-4{
+    background-color: #2183a2;
+}
+
+
+.image-car{
+    margin-top: 100px;
+}
+.gac{
+    position: relative;
+    border-radius: 15px;
+    width: 300px;
+    height: 250px;
+    
+    margin-left: 30px;
+}
+.geely{
+    position: relative;
+    border-radius: 15px;
+    width: 300px;
+    height: 250px;
+    
+    margin-left: 20px;
+}
+.cr-v{
+    position: relative;
+    border-radius: 15px;
+    width: 300px;
+    height: 250px;
+    
+    margin-left: 15px;
+}
+.hyundai-staria{
+    position: relative;
+    border-radius: 15px;
+    width: 300px;
+    height: 250px;
+    
+    margin-left: 15px;
+}
+
+.price{
+    background-color: #fff;
+}
+
+
+.text{
+    position: flex;
+    margin-top: 20px;
+    margin-left: 1000px;
+    color: black;
+    
+}
+
+
+/*login*/
+.container-2{
+    position: relative;
+    margin-top: 100px;
+    width: 450px;
+    height: 500px;
+    background: #dedede;
+    border-radius: 5px;
+}
+.label{
+    padding: 20px 130px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #130f40;
+}
+.login_form{
+    padding: 20px 40px;
+    align-self: center;
+}
+.login_form .font{
+    font-size: 18px;
+    color: #130f40;
+    margin: 5px 0;
+}
+
+.login_form input{
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid silver;
+}
+.login_form font2{
+    margin-top: 30px;
+}
+.login_form button{
+    margin: 45px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #1A237E;
+    border-radius: 5px;
+    border: 1px solid #3949AB;
+    transition: .5s;
+}
+.login_form button:hover{
+    background: #151c6a;
+}
+
+.login_form #email_error, .login_form #pass_error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color: #c62828;
+    background: rgba(255,0,0,0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+}
